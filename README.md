@@ -1,6 +1,7 @@
 open your terminal and run the following commands on after the other in order to launch boiler plate(app)
 
 git clone https://github.com/boygemini/node-express-app-boilerplate.git
+
 cd app
 
 - if you want to launch in a dev environment :
