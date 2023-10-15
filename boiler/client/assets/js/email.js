@@ -1,5 +1,6 @@
 "use strict";
 
+let board = document.querySelector(".board");
 let pre = document.querySelector("#text");
 let button = document.querySelector("#send");
 let head = document.querySelector("#head");
@@ -19,6 +20,8 @@ const InitiateSending = () => {
 	button.innerText = "•••";
 	emailDOM.style.backgroundColor = "";
 };
+
+board.addEventListener("click", () => emailDOM.focus());
 
 emailDOM.addEventListener("input", (e) => {
 	const target = e.target;

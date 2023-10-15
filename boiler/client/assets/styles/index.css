@@ -25,7 +25,12 @@ body {
 	min-height: 100vh;
 	height: 100%;
 	position: relative;
-	background-color: #039e4b21;
+	/* background-color: #039e4b21; */
+	/* background-color: #3f413727; */
+	/* background-image: url(../img/node-js-svgrepo-com.png);
+	background-size: 20%;
+	background-position: 10% 20%;
+	background-repeat: no-repeat; */
 }
 
 .major-container {
@@ -45,7 +50,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 5px;
+	column-gap: 20px;
+	border-radius: 3px;
 	width: 100%;
 	background-color: white;
 	padding: 10px 40px;
@@ -53,12 +59,20 @@ body {
 
 .white-board,
 .container {
-	box-shadow: rgba(60, 64, 67, 0.27) 0px 1px 2px 0px,
-		rgba(60, 64, 67, 0.15) 0px 2px 6px 3px;
+	/* box-shadow: rgba(60, 64, 67, 0.27) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 2px 6px 3px; */
+
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .container img {
 	width: 100px;
+}
+
+.container p {
+	color: #3f4137;
+	font-weight: 700;
 }
 
 .live {
@@ -80,7 +94,7 @@ body {
 
 .white-board {
 	overflow: hidden;
-	border-radius: 5px;
+	border-radius: 3px;
 	width: 100%;
 	height: 300px;
 	background-color: white;
@@ -93,11 +107,11 @@ body {
 .white-board h1 {
 	font-size: 1.1rem;
 	text-transform: uppercase;
-	color: #000000a0;
+	color: #111111;
 }
 
 .board {
-	border-radius: 5px;
+	border-radius: 3px;
 	background-color: whitesmoke;
 	width: 100%;
 	height: auto;
@@ -112,15 +126,16 @@ pre {
 }
 
 button {
+	text-transform: uppercase;
 	width: 100%;
 	height: 70px;
 	border: none;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	font-size: 1.5rem;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	font-size: 1.3rem;
 	background-color: rgb(1, 15, 6);
 	color: white;
 	margin-top: 20px;
@@ -134,7 +149,7 @@ button {
 }
 
 button:hover {
-	background-color: #3e863d;
+	background-color: #3f4137;
 	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
 		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -143,16 +158,16 @@ input {
 	width: 100%;
 	height: 50px;
 	border: none;
-	box-shadow: 0px 0px 1px 1px #1111116c;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
+	box-shadow: 0px 2px 1px -1px #1111116c;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
 	padding: 15px 10px;
 	font-size: 1.3rem;
 	background-color: white;
-	font-family: menlo;
+	font-family: "menlo";
 	transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -164,4 +179,44 @@ input {
 input:focus {
 	outline: 5px solid #1111112b;
 	box-shadow: 0px 0px 1px 1px #1111116e;
+}
+
+@media screen and (max-width: 320px) {
+	.major-container {
+		height: 100%;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	.container p {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.major-container {
+		height: 100%;
+		width: 100%;
+		padding: 20px;
+	}
+
+	.container img {
+		width: 4.7rem;
+		border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		-ms-border-radius: 100%;
+		-o-border-radius: 100%;
+	}
+
+	.container p {
+		color: rgb(110, 109, 109);
+		font-weight: 600;
+	}
+
+	.live {
+		margin-top: 30px;
+	}
 }
