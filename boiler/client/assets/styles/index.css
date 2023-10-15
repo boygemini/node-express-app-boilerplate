@@ -19,7 +19,6 @@
 html {
 	min-width: 100vw;
 	min-height: 100dvh;
-	scroll-snap-type: y proximity;
 }
 
 body {
