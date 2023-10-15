@@ -19,6 +19,7 @@
 html {
 	min-width: 100vw;
 	min-height: 100vh;
+	scroll-snap-type: y proximity;
 }
 
 body {
@@ -35,7 +36,7 @@ body {
 
 .left {
 	width: 50%;
-	min-height: 100vh;
+	min-height: 100dvh;
 	background-image: url(../img/big-logo.png);
 	background-position: center;
 	background-repeat: no-repeat;
